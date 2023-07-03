@@ -56,7 +56,7 @@ export default function Favoritos({ favorites }: Props) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const favorites = await getItems();
 
   return {

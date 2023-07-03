@@ -56,7 +56,7 @@ export default function Productos({ products }: Props) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const results = await getProducts();
   return {
     props: {
